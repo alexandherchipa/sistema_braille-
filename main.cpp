@@ -116,7 +116,7 @@ void escribeletra(){
 	}
 }
 void PintaPixel(int x,int y, float r,float g,float b){//Funcion pinta pincel
-	glPointSize(2);//Tamañó del pixel
+	glPointSize(2);//TamaÃ±Ã³ del pixel
 	glColor3f(r,g,b);
 	glBegin(GL_POINTS);//Funcion de graficacion de OpenGL
 	glVertex2f(x,y);//Coordenadas
@@ -322,7 +322,8 @@ void teclado(unsigned char tecla,int x,int y){//enviamos como parametro la letra
 		rellenocirculo7();
 		rellenocirculo4();
 		rellenocirculo1();
-		break;	case 'd':
+		break;
+	case 'd':
 		tu=3;
 		display();
 		rellenocirculo10();
@@ -586,7 +587,7 @@ int main (int argc, char** argv){
 	glutInitDisplayMode(GLUT_SINGLE || GLUT_RGB);
 	glutInitWindowSize(ancho, alto);
 	glutInitWindowPosition(10,10);
-	glutCreateWindow("Sistema Braille");
+	glutCreateWindow("Sistema Braille_ proyecto");
 	gluOrtho2D(-(ancho/2),ancho/2,-(alto/2),alto/2);
 	glutDisplayFunc(figurabase);
 	glutKeyboardFunc(teclado);
