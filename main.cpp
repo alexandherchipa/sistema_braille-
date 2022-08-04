@@ -587,7 +587,7 @@ int main (int argc, char** argv){
 	glutInitDisplayMode(GLUT_SINGLE || GLUT_RGB);
 	glutInitWindowSize(ancho, alto);
 	glutInitWindowPosition(10,10);
-	glutCreateWindow("Sistema Braille_ proyecto");
+	glutCreateWindow("Aprende Sistema Braille");
 	gluOrtho2D(-(ancho/2),ancho/2,-(alto/2),alto/2);
 	glutDisplayFunc(figurabase);
 	glutKeyboardFunc(teclado);
